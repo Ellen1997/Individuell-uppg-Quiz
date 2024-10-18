@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    
+  <link rel="stylesheet" href="guiz.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body>
+
+    <header>
+      MUSIK OCH FILM QUIZ
+    </header>
+  
+    <div id="startText">
+  <h2>Skriv ditt namn och välj en kategori för att starta quizet</h2>
+    </div>
+
+  <div id="start-container">
+    <input type="text" id="username" placeholder="Skriv ditt namn här ✍️" required>
+    <h2>Välj en kategori</h2>
+    <button onclick="startQuiz('12')">MUSIK</button>
+    <button onclick="startQuiz('11')">FILM</button>
+  </div>
+
+  <div id="quiz-container" style="display: none;">
+    <h1>QUIZ</h1>
+    <div id="timer">Tid kvar: 20 sekunder</div>
+    <p id="question"></p>
+    <div id="options"></div>
+    <div id="feedback"></div>
+    <button id="next-btn" style="display: none;" onclick="showNextQuestion()">Nästa fråga</button>
+  </div>
+
+  <div id="total-timer">Total tid: 0 sekunder </div>
+
+  <div id="result" style="display: none;"></div>
+
+
+</body>
+</html>

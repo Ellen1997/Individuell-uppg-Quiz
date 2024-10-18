@@ -116,19 +116,6 @@ function resetOptions() {
 }
 
 
-// function selectAnswer(e) {
-//   const selectedAnswer = e.target.innerText;
-//   const correctAnswer = questions[currentQuestionIndex].answer;
-
-//   const isCorrect = (selectedAnswer === correctAnswer);
-//   if (isCorrect) score++;
-
-//   clearInterval(questionTimer);
-//   showFeedback(isCorrect);
-
-//   disableOptionButtons();
-//}
-
 function buttonsDoNotWork() {
   const optionButtons = document.querySelectorAll("#options button");
   optionButtons.forEach(button => {
